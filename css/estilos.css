@@ -1,0 +1,240 @@
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    background-image: url(../img/patron-espacio-transparente-color_102902-2360-transformed.webp);
+    background-size: 60rem;
+  }
+  
+.titulo {
+    font-size: 40px;
+    
+    margin-bottom: 7px;
+    color: #fff;
+}
+
+.subtitulo {
+    margin: 0;
+    color: #000;
+    display: inline;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.sabor { 
+    color: #fff;
+    margin: 7px 0;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.7);
+    font-family: 'arial';
+    margin-top: 0;
+}
+
+.linea-division {
+    width: 80%;
+    height: 2px;
+    background-color: #36221c;
+}
+
+
+/* ------------------------- */
+/* Estilos de Materialize */
+/* ------------------------- */
+.carousel {
+    min-height: 400px;
+}
+
+.carousel .carousel-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    width: 600px;
+    height: 400px;
+}
+
+.carousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 15px;
+}
+
+.carousel .indicators .indicator-item {
+    border-radius: 0;
+    transform: rotate(45deg);
+    margin: 0 15px;
+    background: #36221c;
+}
+
+/*------------*/
+/*Fin carousel*/
+/*------------*/
+
+/*-------------------*/
+/*Inicio de navegador*/
+/*-------------------*/
+
+.buttons{
+    width: 100%;
+    height: 40px;
+    background: #017bab;
+    border: none;
+    color: white;
+    margin: auto;
+}
+
+.container__menu{
+    width: 100%;
+    height: 90px;
+    background: #0f2a75;
+    padding: 0px 20px;
+    
+}
+
+.menu{
+    max-width: 1500px;
+    margin: auto;
+    height: 100%;
+}
+
+nav1{
+    height: 100%;
+}
+
+nav1 > ul{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav1 > ul > li{
+    height: 100%;
+    list-style: none;
+    position: relative;
+}
+
+nav1 > ul > li:first-child > a{
+    background-image: url(../img/logo.png);
+    background-size: 75px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 40px 45px;
+}
+
+nav1 > ul > li:first-child:hover > a{
+    background-image: url(../img/logo.png);
+    background-size: 75px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+nav1 > ul > li a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 300ms ease;
+    text-decoration: none;
+}
+
+
+
+nav1 > ul > li a:hover{
+    transform: scale(1.1);
+    background: #0074C7;
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.5);
+}
+
+#selected{
+    transform: scale(1.1);
+    background-color: #0074C7;
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.5);
+}
+
+/*-------*/
+/*Submenu*/
+/*-------*/
+
+nav1 ul li ul{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    background: #0f306d;
+    position: absolute;
+    top: 90px;
+    left: -15px;
+    padding: 14px 0px;
+    visibility: hidden;
+    opacity: 0;
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.5);
+    z-index: 10;
+    transition: all 300ms ease;
+}
+
+nav1 ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 70px;
+
+}
+
+nav1 ul li ul:before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #0f306d;
+    position: absolute;
+    top: -12px;
+    left: 20px;
+}
+
+/*-----------------*/
+/*fin del navegador*/
+/*-----------------*/
+
+/*------------*/
+/*Incio de pdf*/
+/*------------*/
+
+h1{
+    text-align: center;
+    padding: 50px 20px;
+    color: #fff;
+    font-size: 100px;
+    text-transform: uppercase;
+}
+
+embed{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px 0px;
+    
+}
+
+/*----------*/
+/*Fin de pdf*/
+/*----------*/
+
+.columnax1{
+    border-radius: 15px;
+
+}
